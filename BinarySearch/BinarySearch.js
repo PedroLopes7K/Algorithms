@@ -1,8 +1,8 @@
 /**
- * Searches recursively number from the list
- * @param {Array} list Source array
- * @param {number} item Search item
- * @returns {(number|null)} Number if the value is found or NULL otherwise
+ * Pesquisa um item em uma lista
+ * @param {Array} lista fornecida
+ * @param {number} item a ser encontrado
+ * @returns {(number|null)} numero se o indice for encontrado ou null caso não seja
  */
 function binary_search(list, item) {
   let low = 0
@@ -25,6 +25,5 @@ function binary_search(list, item) {
 }
 
 const my_list = [1, 3, 5, 7, 9]
-
 console.log(binary_search(my_list, 3)) // 1
 console.log(binary_search(my_list, -1)) // null
